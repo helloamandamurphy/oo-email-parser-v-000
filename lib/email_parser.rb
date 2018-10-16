@@ -18,7 +18,7 @@ class EmailParser
   def parse(emails)
     email_array = []
     emails.each do |emails|
-      email_array << emails.split(","||" ")
+      email_array << emails.split(/\s,/)
       @@emails << email_array.uniq
     end
     @@emails
