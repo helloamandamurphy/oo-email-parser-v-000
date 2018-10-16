@@ -4,7 +4,9 @@
 # or whitespace (' ').
 
 class EmailParser
+  attr_accessor :emails
   email_list = []
+  
   
   def parse(emails)
     emails.each do |emails|
