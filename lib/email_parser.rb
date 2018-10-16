@@ -11,11 +11,6 @@ class EmailParser
   end
   
   def parse(emails)
-    email_array = []
-    emails.each do |emails|
-      email_array << emails.split(/\s,/)
-      @@emails << email_array.uniq
-    end
-    @@emails
+    email_array = @emails.split(/[,\s]+/).uniq
   end
 end
