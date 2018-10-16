@@ -19,6 +19,7 @@ class EmailParser
     email_array = []
     emails.each do |emails|
       email_array << emails.split(","||" ")
+      @@emails << email_array.uniq
     end
     @@emails
   end
