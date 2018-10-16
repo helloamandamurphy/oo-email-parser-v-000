@@ -13,13 +13,12 @@ class EmailParser
   
   def initialize(emails)
     @emails = emails 
-    @@emails << self
   end
   
   def parse(emails)
     emails.each do |emails|
-      email_list << emails.split(","||" ")
+      @@emails << emails.split(","||" ")
     end
-    email_list
+    @@emails
   end
 end
