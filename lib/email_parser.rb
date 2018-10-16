@@ -4,11 +4,11 @@
 # or whitespace (' ').
 
 class EmailParser
-  emails = []
+  email_list = []
   
   def parse(emails)
     emails.each do |emails|
-      email << emails.split(","||" ")
+      email_list << emails.split(","||" ")
     end
   end
 end
