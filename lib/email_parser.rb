@@ -7,6 +7,8 @@ class EmailParser
   emails = []
   
   def parse(emails)
-    email << emails.split(","||" ")
+    emails.each do |emails|
+      email << emails.split(","||" ")
+    end
   end
 end
