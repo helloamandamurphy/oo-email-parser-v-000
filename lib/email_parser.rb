@@ -12,5 +12,6 @@ class EmailParser
     emails.each do |emails|
       email_list << emails.split(","||" ")
     end
+    email_list
   end
 end
