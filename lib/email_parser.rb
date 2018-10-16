@@ -9,7 +9,7 @@ class EmailParser
   
   def self.all 
     @@emails
-  
+  end
   
   def parse(emails)
     emails.each do |emails|
