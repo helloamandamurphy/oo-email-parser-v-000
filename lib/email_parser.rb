@@ -12,7 +12,9 @@ class EmailParser
   end
   
   def initialize(emails)
-    
+    @emails = emails 
+    @@emails << self
+  end
   
   def parse(emails)
     emails.each do |emails|
