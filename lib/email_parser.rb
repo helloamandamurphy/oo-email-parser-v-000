@@ -11,6 +11,9 @@ class EmailParser
     @@emails
   end
   
+  def initialize(emails)
+    
+  
   def parse(emails)
     emails.each do |emails|
       email_list << emails.split(","||" ")
